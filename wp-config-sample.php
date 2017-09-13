@@ -17,31 +17,26 @@
  *
  * @package WordPress
  */
-if($_SERVER["RDS_DB_NAME"])
-{
-	/** The name of the database for WordPress */ 
-	define('DB_NAME', $_SERVER["RDS_DB_NAME"]);
-	/** MySQL database username */
-	define('DB_USER', $_SERVER["RDS_USERNAME"]);
-	/** MySQL database password */ 
-	define('DB_PASSWORD', $_SERVER["RDS_PASSWORD"]); /** MySQL hostname */
-	define('DB_HOST', $_SERVER["RDS_HOSTNAME"]);
-}
-else
-{
-	/** The name of the database for WordPress */ 
-	define('DB_NAME', 'bryce-blog');
-	/** MySQL database username */
-	define('DB_USER', 'root');
-	/** MySQL database password */ 
-	define('DB_PASSWORD', 'root'); /** MySQL hostname */
-	define('DB_HOST', 'localhost:8889');
-}
-/** Database Charset to use in creating database tables. */ 
+
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'database_name_here');
+
+/** MySQL database username */
+define('DB_USER', 'username_here');
+
+/** MySQL database password */
+define('DB_PASSWORD', 'password_here');
+
+/** MySQL hostname */
+define('DB_HOST', 'localhost');
+
+/** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
+
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
-define( 'AUTOMATIC_UPDATER_DISABLED', true );
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
@@ -51,14 +46,14 @@ define( 'AUTOMATIC_UPDATER_DISABLED', true );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'QSPB6AWNcn');
-define('SECURE_AUTH_KEY',  'QSPB6AWNcn');
-define('LOGGED_IN_KEY',    'QSPB6AWNcn');
-define('NONCE_KEY',        'QSPB6AWNcn');
-define('AUTH_SALT',        'QSPB6AWNcn');
-define('SECURE_AUTH_SALT', 'QSPB6AWNcn');
-define('LOGGED_IN_SALT',   'QSPB6AWNcn');
-define('NONCE_SALT',       'QSPB6AWNcn');
+define('AUTH_KEY',         'put your unique phrase here');
+define('SECURE_AUTH_KEY',  'put your unique phrase here');
+define('LOGGED_IN_KEY',    'put your unique phrase here');
+define('NONCE_KEY',        'put your unique phrase here');
+define('AUTH_SALT',        'put your unique phrase here');
+define('SECURE_AUTH_SALT', 'put your unique phrase here');
+define('LOGGED_IN_SALT',   'put your unique phrase here');
+define('NONCE_SALT',       'put your unique phrase here');
 
 /**#@-*/
 
