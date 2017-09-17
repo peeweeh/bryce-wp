@@ -19,7 +19,7 @@
  */
 
 	/** The name of the database for WordPress */ 
-	define('DB_NAME', 'bryce-blog');
+	define('DB_NAME', 'wordpress');
 	/** MySQL database username */
 	define('DB_USER', 'root');
 	/** MySQL database password */ 
@@ -78,6 +78,7 @@ define('WP_DEBUG', false);
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-
+define('WP_HOME','http://localhost');
+define('WP_SITEURL','http://localhost');
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
