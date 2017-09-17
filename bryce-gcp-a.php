@@ -79,6 +79,6 @@ define('WP_DEBUG', false);
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 define('WP_HOME','http://blog-a.brycegcp.com');
-define('WP_SITEURL','http://blog-a.brycegcp.comt');
+define('WP_SITEURL','http://blog-a.brycegcp.com');
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
